@@ -33,12 +33,7 @@ error_reporting(E_ALL);
     //Define an array $numbers which contains 7, 9, 8, 9, 8, 8, 6
     $numbers = [7, 9, 8, 9, 8, 8, 6];
 
-    //printArr() takes an array as a parameter and prints the array, one item per line
-    function printArr($array) {
-        foreach ($array as $item) {
-            echo "$item <br>";
-        }
-    }
+    require('functions.php');
 
     printArr($numbers);
 
