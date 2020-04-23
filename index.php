@@ -28,14 +28,22 @@ error_reporting(E_ALL);
 
     echo "<p>PHP Array Practice.</p>";
 
-    // Additional steps go here:
-
     //Define an array $numbers which contains 7, 9, 8, 9, 8, 8, 6
     $numbers = [7, 9, 8, 9, 8, 8, 6];
 
-    require('functions.php');
+    include('functions.php');
 
+    //Call the printArr() function and pass it the $numbers array
     printArr($numbers);
+
+    //Call the largest() function and pass it the $numbers array
+    echo "Largest value = " . largest($numbers) . "<br>";
+
+
+    //Define empty array and test methods with empty array
+    //$array = [];
+    //printArr($array);
+    //echo "Largest value = " . largest($array) . "<br>";
 
     ?>
 
