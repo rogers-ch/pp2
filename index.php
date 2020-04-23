@@ -35,15 +35,26 @@ error_reporting(E_ALL);
 
     //Call the printArr() function and pass it the $numbers array
     printArr($numbers);
+    echo "<br>";
 
     //Call the largest() function and pass it the $numbers array
     echo "Largest value = " . largest($numbers) . "<br>";
+    echo "<br>";
 
+    //Call the removeDups() function and pass it the $numbers array, print the result
+    $numbersMod = removeDups($numbers);
+    printArr($numbersMod);
+    echo "<br>";
 
+    /*  Test code
     //Define empty array and test methods with empty array
-    //$array = [];
-    //printArr($array);
-    //echo "Largest value = " . largest($array) . "<br>";
+    $array = [];
+    printArr($array);
+    echo "Largest value = " . largest($array) . "<br>";
+    $arrayMod = removeDups($array);
+    printArr($arrayMod);
+    echo "<br>";
+    */
 
     ?>
 
