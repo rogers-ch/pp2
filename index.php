@@ -26,7 +26,7 @@ error_reporting(E_ALL);
 
     <?php
 
-    echo "<p>PHP Array Practice.</p>";
+    echo "<h2>PHP Array Practice.</h2>";
 
     //Define an array $numbers which contains 7, 9, 8, 9, 8, 8, 6
     $numbers = [7, 9, 8, 9, 8, 8, 6];
@@ -34,19 +34,23 @@ error_reporting(E_ALL);
     include('functions.php');
 
     //Call the printArr() function and pass it the $numbers array
+    echo "<h3>(2) and (3) - printArr() function</h3>";
     printArr($numbers);
     echo "<br>";
 
     //Call the largest() function and pass it the $numbers array
+    echo "<h3>(4) - largest() function</h3>";
     echo "Largest value = " . largest($numbers) . "<br>";
     echo "<br>";
 
     //Call the removeDups() function and pass it the $numbers array, print the result
+    echo "<h3>(5) - removeDups() function</h3>";
     $numbersMod = removeDups($numbers);
     printArr($numbersMod);
     echo "<br>";
 
     //Call the distribution() function and pass it the $numbers array, print the result
+    echo "<h3>(6) - distribution() function</h3>";
     $numbersDist = distribution($numbers);
 
     foreach ($numbersDist as $key => $value) {
