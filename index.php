@@ -46,14 +46,35 @@ error_reporting(E_ALL);
     printArr($numbersMod);
     echo "<br>";
 
-    /*  Test code
+    //Call the distribution() function and pass it the $numbers array, print the result
+    $numbersDist = distribution($numbers);
+
+    foreach ($numbersDist as $key => $value) {
+        echo $key . "=>" . $value . "<br>";
+    }
+
+    echo "<br>";
+
+
+    /*  Additional test code - for empty array input
+
     //Define empty array and test methods with empty array
     $array = [];
+
     printArr($array);
+
     echo "Largest value = " . largest($array) . "<br>";
+
     $arrayMod = removeDups($array);
     printArr($arrayMod);
     echo "<br>";
+
+    $arrayMod2 = distribution($array);
+    foreach ($arrayMod2 as $key => $value) {
+        echo $key . "=>" . $value . "<br>";
+    }
+    echo "<br>";
+
     */
 
     ?>
